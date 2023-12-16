@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="620.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.das.EditController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="613.0" text="Редактирование записи">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="614.0">
+            <children>
+                <Label prefHeight="19.0" prefWidth="170.0" text="ID: " />
+                <TextField fx:id="text_num" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Введите ID" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="45.0" prefHeight="51.0" prefWidth="614.0">
+            <children>
+                <Label prefHeight="19.0" prefWidth="170.0" text="Клиент:" />
+                <TextField fx:id="text_client" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Введите клиента" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="97.0" prefHeight="51.0" prefWidth="614.0">
+            <children>
+                <Label prefHeight="19.0" prefWidth="170.0" text="Сотрудник: " />
+                <TextField fx:id="text_emp" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Введите сотрудника" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="149.0" prefHeight="51.0" prefWidth="614.0">
+            <children>
+                <Label prefHeight="22.0" prefWidth="170.0" text="Дата продажи: " />
+                <TextField fx:id="text_date" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Введите дату продажи" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="201.0" prefHeight="51.0" prefWidth="614.0">
+            <children>
+                <Label prefHeight="22.0" prefWidth="170.0" text="Магазин: " />
+                <TextField fx:id="text_shop" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Введите магазин" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="614.0">
+            <children>
+                <Label prefHeight="22.0" prefWidth="170.0" text="Адрес магазина: " />
+                <TextField fx:id="text_address" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Введите адрес магазина" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="304.0" prefHeight="51.0" prefWidth="620.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="150.0" text="Редактировать">
+                    <HBox.margin>
+                        <Insets right="100.0" />
+                    </HBox.margin></Button>
+                <Button contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="150.0" text="Отмена" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets right="100.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="29.0" />
+                    </font></Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>
